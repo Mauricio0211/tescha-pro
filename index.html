@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Repositorio Digital TESCHA</h1>
+            <img src="informatica.jpg" alt="informatica" class="informatica"  width="250" height="100" >
+            <input type="text" id="searchInput" placeholder="Buscar artículos...">
+        </header>
+        <div id="articlesContainer">
+            <!-- Artículos se cargarán aquí -->
+        </div>
+        <div class="new-article-container">
+            <h2>Agregar Nuevo Artículo</h2>
+            <form id="newArticleForm">
+                <label for="newTitle">Título</label>
+                <input type="text" id="newTitle" required>
+                <label for="newContent">Contenido</label>
+                <textarea id="newContent" rows="4" required></textarea>
+                <label for="newCategory">Categoría</label>
+                <input type="text" id="newCategory" required>
+                <label for="newTags">Etiquetas (separadas por comas)</label>
+                <input type="text" id="newTags" required>
+                <button type="submit">Agregar Artículo</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
